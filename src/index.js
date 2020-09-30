@@ -20,5 +20,9 @@ exports.max = function max (myArr) {
 }
 
 exports.avg = function avg (myArr) {
-  return 0;
+  if ((myArr === null) || (myArr === undefined) || (!Array.isArray(myArr)) || (myArr.length === 0)) return 0;
+
+  //let arrAvg = ;
+
+  return eval(myArr.join('+')) / myArr.length;
 }
